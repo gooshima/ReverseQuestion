@@ -1,0 +1,61 @@
+﻿<!DOCTYPE HTML>
+<html lang="ja" ng-app="rqApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <script charset="utf-8" src="components/loader.js"></script>
+    <script charset="utf-8" src="js/scripts.js"></script>
+
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        console.log("こんにちは");
+    </script>
+</head>
+
+<body ng-controller="TopController">
+
+<!-- Side Menu -->
+<ons-sliding-menu main-page="loginPage" menu-page="menuPage" side="right" max-slide-distance="250px" var="menu"
+                  swipeable="false">
+</ons-sliding-menu>
+<ons-template id="menuPage">
+    <ons-list>
+        <ons-list-item modifier="" onclick="menu.setMainPage('question.html', {closeMenu: true})"
+                       style="padding-top: 10px;">
+            課題一覧
+        </ons-list-item>
+        <ons-list-item modifier="" onclick="menu.setMainPage('question.html', {closeMenu: true})">
+            ランキング
+        </ons-list-item>
+        <ons-list-item modifier="" onclick="menu.setMainPage('question.html', {closeMenu: true})">
+            学級新聞
+        </ons-list-item>
+        <ons-list-item modifier="" onclick="menu.setMainPage('question.html', {closeMenu: true})">
+            マイページ
+        </ons-list-item>
+        <ons-list-item modifier="" onclick="menu.setMainPage('question.html', {closeMenu: true})">
+            ヘルプ
+        </ons-list-item>
+    </ons-list>
+</ons-template>
+
+<!-- Login Page -->
+<ons-template id="loginPage">
+    <ons-page>
+        <div class="logImgArea">
+            <div>
+                <img src="img/logo.png" class="logoImg">
+            </div>
+            <div>
+                <button class="button button--outline" ng-click="toNextPage()">Start</button>
+            </div>
+        </div>
+    </ons-page>
+</ons-template>
+
+</body>
+</html>
