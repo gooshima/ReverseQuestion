@@ -25,6 +25,30 @@
 	-webkit-transition-duration: 300ms;
 	-webkit-transform-origin-y: 0;
 }
+.question {
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: justify;
+}
+.text {
+	display: inline;
+}
+.button_box {
+	display: -webkit-box;
+	-webkit-box-align: center;	
+}
+.ukeru_button, .sasuga_button {
+	-webkit-appearance: none;
+	width: 100px;
+	height: 45px;
+	background-size: 100px 45px;	
+}
+.ukeru_button {
+	background-image: url(../img/ukeru_button.png);
+}
+.sasuga_button {
+	background-image: url(../img/sasuga_button.png);
+}
 
 /* 共通
    ========================================================================== */
