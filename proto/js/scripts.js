@@ -16,7 +16,7 @@ var _SERVER_URL = 'http://localhost';
     rqAppModule.controller('listController', function ($scope) {
         console.log("新着一覧画面です。");
         $scope.toQuestionPage = function () {
-            alert("質問画面に遷移します。");
+            //alert("質問画面に遷移します。");
             menu.setMainPage('question.html' , { closeMenu: true } );
         };
     });
@@ -60,7 +60,7 @@ var _SERVER_URL = 'http://localhost';
     rqAppModule.controller('NoticeController', function ($scope) {
         console.log("お知らせ画面です。");
         $scope.testFunc = function () {
-            alert("xxxxxx");
+            //alert("xxxxxx");
         };
     });
 
