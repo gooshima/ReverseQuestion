@@ -7,6 +7,16 @@ var _SERVER_URL = 'http://localhost';
     //TOP画面コントローラ
     rqAppModule.controller('TopController', function ($scope) {
         $scope.toNextPage = function () {
+            //menu.setMainPage('question.html' , { closeMenu: true } );
+            menu.setMainPage('list.html' , { closeMenu: true } );
+        };
+    });
+
+    //新着一覧画面コントローラ
+    rqAppModule.controller('listController', function ($scope) {
+        console.log("新着一覧画面です。");
+        $scope.toQuestionPage = function () {
+            alert("質問画面に遷移します。");
             menu.setMainPage('question.html' , { closeMenu: true } );
         };
     });
@@ -36,7 +46,7 @@ var _SERVER_URL = 'http://localhost';
                 buttonLabel: 'OK',
                 animation: 'default',
                 callback: function() {
-                return false;
+                    return false;
                 }
             });
         };
@@ -45,7 +55,9 @@ var _SERVER_URL = 'http://localhost';
     //お知らせ画面コントローラ
     rqAppModule.controller('NoticeController', function ($scope) {
         console.log("お知らせ画面です。");
-
+        $scope.testFunc = function () {
+            alert("xxxxxx");
+        };
     });
 
 })(_SERVER_URL);

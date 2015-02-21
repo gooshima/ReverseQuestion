@@ -1,0 +1,226 @@
+<div ng-controller="listController">
+    <ons-toolbar fixed-style class="mainNav">
+        <div class="left" ng-click="menu.setMainPage('question.html' , { closeMenu: true } );">
+            <ons-toolbar-button>
+                <ons-icon icon="ion-chevron-left"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+        <div class="center" onclick="menu.toggleMenu()">
+            <div class="center c_white">新着問題</div>
+        </div>
+        <div class="right">
+            <ons-toolbar-button ng-click="menu.setMainPage('notice.html' , { closeMenu: true } );">
+                <ons-icon icon="fa-bell">5</ons-icon>
+            </ons-toolbar-button>
+            <ons-toolbar-button onclick="menu.toggleMenu()">
+                <ons-icon icon="fa-bars"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+    </ons-toolbar>
+
+    <ons-list>
+        <ons-list-header style="background-color: #F2EFEF; padding:10px; font-weight: bold;">
+        </ons-list-header>
+        <ons-list-item>
+            <p>みんなが作った、新しい質問が <strong>5</strong> 個あるよ！</p>
+        </ons-list-item>
+
+        <ons-list-header style="background-color: #F2EFEF; padding:10px; font-weight: bold;">国語<br>
+        </ons-list-header>
+        <ons-list-item>
+            <ons-list class="bg_green">
+                <ons-list-item>
+                    <div style="float: left; height: 100px;">
+                        <img src="img/answers/mitsuni.jpg" class="halfImg">
+                    </div>
+                    <div style="color: red; height: 100px;border: 1px solid;vertical-align:middle;" ng-click="toQuestionPage();">
+                        徳川光圀が答えになる問題
+                    </div>
+                    <br clear="all">
+
+                    <label class="checkbox" style="float:left; margin-right:10px;">
+                        <input type="checkbox" checked/>
+                    </label>
+                </ons-list-item>
+
+                <ons-list-item>
+                    <div style="float: left; height: 100px;">
+                        <img src="img/answers/dummy.jpg" class="halfImg" ng-click="toQuestionPage();">
+                    </div>
+                    <div>
+                        塩が答えになる問題
+                    </div>
+                    <br clear="all">
+
+                    <label class="checkbox" style="float:left; margin-right:10px;">
+                        <input type="checkbox" checked/>
+                    </label>
+                </ons-list-item>
+
+                <ons-list-item>
+                    <div style="float: left; height: 100px;">
+                        <img src="img/answers/dummy.jpg" class="halfImg" ng-click="toQuestionPage();">
+                    </div>
+                    <div>
+                        くじらが答えになる問題
+                    </div>
+                    <br clear="all">
+
+                    <label class="checkbox" style="float:left; margin-right:10px;">
+                        <input type="checkbox" checked/>
+                    </label>
+                </ons-list-item>
+
+                <ons-list-item>
+                    <div style="float: left; height: 100px;" ng-click="toQuestionPage();">
+                        <img src="img/answers/dummy.jpg" class="halfImg">
+                    </div>
+                    <div>
+                        500円の文章題
+                    </div>
+                    <br clear="all">
+
+                    <label class="checkbox" style="float:left; margin-right:10px;">
+                        <input type="checkbox" checked/>
+                    </label>
+                </ons-list-item>
+
+                <ons-list-item>
+                    <div style="float: left; height: 100px;">
+                        <img src="img/answers/dummy.jpg" class="halfImg">
+                    </div>
+                    <div>
+                        ・・・
+                    </div>
+                    <br clear="all">
+
+                    <label class="checkbox" style="float:left; margin-right:10px;">
+                        <input type="checkbox" checked/>
+                    </label>
+                </ons-list-item>
+
+                <ons-list-item>
+                    <div style="float: left; height: 100px;">
+                        <img src="img/answers/dummy.jpg" class="halfImg">
+                    </div>
+                    <div>
+                        ・・・
+                    </div>
+                    <br clear="all">
+
+                    <label class="checkbox" style="float:left; margin-right:10px;">
+                        <input type="checkbox" checked/>
+                    </label>
+                </ons-list-item>
+
+                <ons-list-item>
+                    <div style="float: left; height: 100px;">
+                        <img src="img/answers/dummy.jpg" class="halfImg">
+                    </div>
+                    <div>
+                        ・・・
+                    </div>
+                    <br clear="all">
+
+                    <label class="checkbox" style="float:left; margin-right:10px;">
+                        <input type="checkbox" checked/>
+                    </label>
+                </ons-list-item>
+
+                <ons-list-item>
+                    <div style="float: left; height: 100px;">
+                        <img src="img/answers/dummy.jpg" class="halfImg">
+                    </div>
+                    <div>
+                        ・・・
+                    </div>
+                    <br clear="all">
+
+                    <label class="checkbox" style="float:left; margin-right:10px;">
+                        <input type="checkbox" checked/>
+                    </label>
+                </ons-list-item>
+
+
+
+                <!--TODO -->
+                <!--<ons-list-item>Cさん：へー-->
+                    <!--<button class="button button--outline">ナニソレ？</button>-->
+                    <!--<label class="checkbox" style="float:left; margin-right:10px;">-->
+                        <!--<input type="checkbox"/>-->
+
+                        <!--<div class="checkbox__checkmark"></div>-->
+                    <!--</label>-->
+                <!--</ons-list-item>-->
+                <!--<ons-list-item>Dさん：なるほろ-->
+                    <!--<button class="button button--outline">ユニーク！</button>-->
+                    <!--<label class="checkbox" style="float:left; margin-right:10px;">-->
+                        <!--<input type="checkbox"/>-->
+
+                        <!--<div class="checkbox__checkmark"></div>-->
+                    <!--</label>-->
+                <!--</ons-list-item>-->
+                <!--<ons-list-item>Eさん：わかりません =-->
+                    <!--<button class="button button--outline">いいね！</button>-->
+                    <!--<label class="checkbox" style="float:left; margin-right:10px;">-->
+                        <!--<input type="checkbox"/>-->
+
+                        <!--<div class="checkbox__checkmark"></div>-->
+                    <!--</label>-->
+                <!--</ons-list-item>-->
+            </ons-list>
+        </ons-list-item>
+
+        <!--<ons-list-header style="background-color: #F2EFEF; padding:10px; font-weight: bold;">英語<br>-->
+            <!--答え：btw&nbsp;&nbsp;&nbsp;&nbsp;-->
+        <!--</ons-list-header>-->
+        <!--<ons-list-item>-->
+            <!--<ons-list class="bg_green">-->
+                <!--<ons-list-item>-->
+                    <!--<button class="button button--outline">いいね！</button>-->
+                    <!--<button class="button button--outline">ナニソレ？</button>-->
+                    <!--<button class="button button--outline">ユニーク！</button>-->
+                <!--</ons-list-item>-->
+                <!--<ons-list-item>Aさん：by the way の省略は？-->
+                    <!--<label class="checkbox" style="float:left; margin-right:10px;">-->
+                        <!--<input type="checkbox" checked/>-->
+
+                        <!--<div class="checkbox__checkmark"></div>-->
+                    <!--</label>-->
+                <!--</ons-list-item>-->
+                <!--<ons-list-item>Bさん：ところで-->
+                    <!--<label class="checkbox" style="float:left; margin-right:10px;">-->
+                        <!--<input type="checkbox"/>-->
+
+                        <!--<div class="checkbox__checkmark"></div>-->
+                    <!--</label>-->
+                <!--</ons-list-item>-->
+                <!--<ons-list-item>Cさん：へー-->
+                    <!--<button class="button button--outline">ナニソレ？</button>-->
+                    <!--<label class="checkbox" style="float:left; margin-right:10px;">-->
+                        <!--<input type="checkbox"/>-->
+
+                        <!--<div class="checkbox__checkmark"></div>-->
+                    <!--</label>-->
+                <!--</ons-list-item>-->
+                <!--<ons-list-item>Dさん：なるほろ-->
+                    <!--<button class="button button--outline">ユニーク！</button>-->
+                    <!--<label class="checkbox" style="float:left; margin-right:10px;">-->
+                        <!--<input type="checkbox"/>-->
+
+                        <!--<div class="checkbox__checkmark"></div>-->
+                    <!--</label>-->
+                <!--</ons-list-item>-->
+                <!--<ons-list-item>Eさん：わかりません =-->
+                    <!--<button class="button button--outline">いいね！</button>-->
+                    <!--<label class="checkbox" style="float:left; margin-right:10px;">-->
+                        <!--<input type="checkbox"/>-->
+
+                        <!--<div class="checkbox__checkmark"></div>-->
+                    <!--</label>-->
+                <!--</ons-list-item>-->
+            <!--</ons-list>-->
+        <!--</ons-list-item>-->
+    </ons-list>
+
+</div>
