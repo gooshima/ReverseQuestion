@@ -28,7 +28,7 @@
 .question {
 	display: -webkit-box;
 	-webkit-box-align: center;
-	-webkit-box-pack: justify;
+	-webkit-box-pack: start;
 	max-width: 100%;
 }
 .text {
