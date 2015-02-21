@@ -23,6 +23,10 @@ var _SERVER_URL = 'http://localhost';
 
     //質問画面コントローラ
     rqAppModule.controller('QuestionController', function ($scope) {
+    	$scope.submitQuestion = function(e) {
+    		jQuery("#answers").css("-webkit-transform", "scale3d(1,1,1)");
+    	}
+    	
         $scope.testFunc = function (argCode) {
             var msgCode = argCode;
             switch (msgCode) {

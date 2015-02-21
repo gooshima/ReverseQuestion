@@ -2,7 +2,9 @@
    ========================================================================== */
 
 /*色*/
-.c_white{ color: #ffffff;}
+.c_white{
+    color: #244DDB;
+}
 
 /* TOP画面
    ========================================================================== */
@@ -16,6 +18,12 @@
 .logoImg {
     /*width: 120px;*/
     width: 50%;
+}
+
+#answers {
+	-webkit-transform: scale3d(1, 0, 1);
+	-webkit-transition-duration: 300ms;
+	-webkit-transform-origin-y: 0;
 }
 
 /* 共通
