@@ -8,6 +8,9 @@
 
 /* TOP画面
    ========================================================================== */
+.startbutton {
+	padding: 10px 20px;
+}
 .logImgArea {
     text-align: center;
     width: 100%;
