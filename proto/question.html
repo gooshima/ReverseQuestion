@@ -1,5 +1,4 @@
 <div ng-controller="QuestionController">
-
     <ons-toolbar fixed-style class="mainNav">
         <div class="left" ng-click="backToPage();">
             <ons-toolbar-button>
@@ -26,9 +25,10 @@
 
         </ons-list-header>
         <ons-list-item>
+
             <p style="line-height: normal; padding: 10px 0;margin: 0;font-size: 15px;">
                 <textarea class="textarea" placeholder="問題を入力してね" style="width: 80%"></textarea>
-                <button class="button button--outline" ng-click="testFunc();">送信</button>
+                <button class="button button--outline" ng-click="submitQuestion();">送信</button>
             </p>
 
         </ons-list-item>
@@ -38,8 +38,15 @@
             <button class="button button--outline" ng-click="testFunc(2);">ナニソレ？</button>
             <button class="button button--outline" ng-click="testFunc(3);">ユニーク！</button>
         </ons-list-header>
-        <ons-list-item>
+        <ons-list-item id="answers">
             <ons-list class="bg_green">
+                <ons-list-item>あなた：常陸水戸藩の第2代藩主
+                    <label class="checkbox" style="float:left; margin-right:10px;">
+                        <input type="checkbox" checked/>
+
+                        <div class="checkbox__checkmark"></div>
+                    </label>
+                </ons-list-item>
                 <ons-list-item>Aさん：常陸水戸藩の第2代藩主
                     <label class="checkbox" style="float:left; margin-right:10px;">
                         <input type="checkbox" checked/>

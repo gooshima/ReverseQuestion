@@ -18,6 +18,12 @@
     width: 50%;
 }
 
+#answers {
+	-webkit-transform: scale3d(1, 0, 1);
+	-webkit-transition-duration: 300ms;
+	-webkit-transform-origin-y: 0;
+}
+
 /* 共通
    ========================================================================== */
 .halfImg{
